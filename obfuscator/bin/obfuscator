@@ -18,7 +18,7 @@ try {
         throw new Error('Path must lead to a file')
     }
 
-    console.log(JSON.stringify(require('../')(require(fullPathName))));
+    console.log(JSON.stringify(require('../')(require(fullPathName)), null, 4));
 } catch (e) {
     console.error(e.message);
     process.exit(1);
