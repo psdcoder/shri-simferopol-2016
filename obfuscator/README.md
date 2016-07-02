@@ -20,20 +20,20 @@ const results = obfuscator(['classname1', 'classname2', 'etc', ...]);
 Also you can use obfuscator from your command line interface:
 
 ```sh
-    ./bin/obfuscator path/to/datafile.json
+./bin/obfuscator path/to/datafile.json
 ```
 
 Result will be printed to STDOUT, so you can pipe it to file:
 
 ```sh
-    ./bin/obfuscator path/to/datafile.json > results.json
+./bin/obfuscator path/to/datafile.json > results.json
 
 ```
 
 For testing purposes there are test `data.json` file in `test` folder, so you can try obfuscate it:
 
 ```sh
-    ./bin/obfuscator test/data.json > results.json
+./bin/obfuscator test/data.json > results.json
 ```
 
 # Tests
