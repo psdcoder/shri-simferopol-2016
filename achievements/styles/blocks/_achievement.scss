@@ -21,7 +21,6 @@ $achievement-image-size: 48px;
     }
 
     .#{$block}__index-container:before {
-      @debug map-get($themes-colors, $type);
       color: shade(map-get($themes-colors, $type), 20%);
     }
   }
@@ -30,7 +29,7 @@ $achievement-image-size: 48px;
 .#{$block} {
   box-sizing: border-box;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   width: $achievement-size;
   height: $achievement-size;
   background: map-get($themes-colors, default);
@@ -46,6 +45,7 @@ $achievement-image-size: 48px;
 
   &__inner {
     position: relative;
+    z-index: 1;
     top: $achievement-border-size;
     left: $achievement-border-size;
     display: flex;
@@ -83,7 +83,7 @@ $achievement-image-size: 48px;
       font-family: Arial, Helvetica, sans-serif;
       font-weight: bold;
       color: shade(map-get($themes-colors, default), 20%);
-      z-index: 10;
+      z-index: 2;
       content: counter(achievement);
     }
   }

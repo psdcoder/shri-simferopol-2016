@@ -65,7 +65,7 @@ gulp.task('serve', () => {
         });
 });
 
-gulp.task('deploy', function() {
+gulp.task('deploy', ['clean', 'build'], function() {
     return gulp.src(path.join(DIST, '**', '*.*'))
         .pipe(ghPages());
 });
