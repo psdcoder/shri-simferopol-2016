@@ -1,0 +1,126 @@
+.page__body {
+  margin: 0;
+  padding: 0; }
+
+.page__container {
+  max-width: 960px;
+  margin: 0 auto; }
+
+.achievements {
+  list-style: none;
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  counter-reset: achievement; }
+  .achievements__item {
+    margin: 10px;
+    counter-increment: achievement; }
+
+.achievement {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  background: #888;
+  border-radius: 50%; }
+  .achievement_style_green {
+    background-color: #84c66a; }
+    .achievement_style_green .achievement__inner {
+      background-color: #c2e3b5; }
+    .achievement_style_green .achievement__index-container {
+      border-color: #84c66a;
+      background-color: #c2e3b5; }
+    .achievement_style_green .achievement__index-container:before {
+      color: #6a9e55; }
+  .achievement_style_purple {
+    background-color: #b088b2; }
+    .achievement_style_purple .achievement__inner {
+      background-color: #d8c4d9; }
+    .achievement_style_purple .achievement__index-container {
+      border-color: #b088b2;
+      background-color: #d8c4d9; }
+    .achievement_style_purple .achievement__index-container:before {
+      color: #8d6d8e; }
+  .achievement_style_blue {
+    background-color: #759dce; }
+    .achievement_style_blue .achievement__inner {
+      background-color: #bacee7; }
+    .achievement_style_blue .achievement__index-container {
+      border-color: #759dce;
+      background-color: #bacee7; }
+    .achievement_style_blue .achievement__index-container:before {
+      color: #5e7ea5; }
+  .achievement_style_orange {
+    background-color: #ffc219; }
+    .achievement_style_orange .achievement__inner {
+      background-color: #ffe18c; }
+    .achievement_style_orange .achievement__index-container {
+      border-color: #ffc219;
+      background-color: #ffe18c; }
+    .achievement_style_orange .achievement__index-container:before {
+      color: #cc9b14; }
+  .achievement_style_red {
+    background-color: #ff6e60; }
+    .achievement_style_red .achievement__inner {
+      background-color: #ffb7b0; }
+    .achievement_style_red .achievement__index-container {
+      border-color: #ff6e60;
+      background-color: #ffb7b0; }
+    .achievement_style_red .achievement__index-container:before {
+      color: #cc584d; }
+  .achievement_style_brown {
+    background-color: #d87f49; }
+    .achievement_style_brown .achievement__inner {
+      background-color: #ecbfa4; }
+    .achievement_style_brown .achievement__index-container {
+      border-color: #d87f49;
+      background-color: #ecbfa4; }
+    .achievement_style_brown .achievement__index-container:before {
+      color: #ad663a; }
+  .achievement__inner {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    background-color: #c4c4c4; }
+  .achievement__image {
+    display: block;
+    width: 48px;
+    height: 48px; }
+  .achievement__index-container {
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 4px solid #888;
+    border-radius: 50%;
+    background-color: #c4c4c4; }
+    .achievement__index-container:before {
+      position: relative;
+      font-size: 17px;
+      line-height: 17px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      color: #6d6d6d;
+      z-index: 10;
+      content: counter(achievement); }
