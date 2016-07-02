@@ -1,3 +1,4 @@
 achievements/node_modules
 achievements/dist
 achievements/.publish
+obfuscator/node_modules

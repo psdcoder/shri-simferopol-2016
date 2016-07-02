@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+
+const path = require('path');
+const fs = require('fs');
+
+if (process.argv.length !== 3) {
+    console.error('You should pass path to file with classnames data. It should be array in json format');
+    process.exit(1);
+}
+
+
+const fullPathName = path.resolve(__dirname, '..', process.argv[2]);
+
+try {
+    const fileStats = fs.statSync(fullPathName);
+
+    if (!fileStats.isFile()) {
+        throw new Error('Path must lead to a file')
+    }
+
+    console.log(JSON.stringify(require('../')(require(fullPathName))));
+} catch (e) {
+    console.error(e.message);
+    process.exit(1);
+}
