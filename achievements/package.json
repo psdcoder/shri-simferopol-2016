@@ -1,0 +1,27 @@
+{
+  "name": "achievements-list",
+  "version": "0.0.1",
+  "description": "Test task for Yandex Shri-2016 in Simferopol",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pavel Grinchenko <psdcoder@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^6.3.6",
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "rimraf": "^2.5.2"
+  },
+  "devDependencies": {
+    "gulp-gh-pages": "^0.5.4"
+  }
+}

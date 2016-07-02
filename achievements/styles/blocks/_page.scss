@@ -1,0 +1,16 @@
+$block: 'page';
+
+$page-max-width: 960px;
+
+.#{$block} {
+
+  &__body {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__container {
+    max-width: $page-max-width;
+    margin: 0 auto;
+  }
+}
