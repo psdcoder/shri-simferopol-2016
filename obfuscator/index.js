@@ -1,5 +1,9 @@
 module.exports = obfuscate;
 
+// from "a" to "z" and from "A" to "Z"
+const charsRange = generateChars([[97, 122], [65, 90]]);
+const charsRangeLength = charsRange.length;
+
 /**
  * Obfuscate classnames to shortest version
  *
@@ -11,9 +15,6 @@ function obfuscate(classes) {
         throw new Error(`You passed non-array value: ${classes}`);
     }
 
-    // from "a" to "z" and from "A" to "Z"
-    const charsRange = generateChars([[97, 122], [65, 90]]);
-    const charsRangeLength = charsRange.length;
     const classesMap = {};
     let classIndex = 0;
 
